@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+
+  <h2 style="text-align:center">Gallstone</h2>
+  <p>A gallstone is a stone formed within the gallbladder out of 
+precipitated bile components.The term cholelithiasis 
+may refer to the presence of gallstones or to any disease 
+caused by gallstones, and choledocholithiasis refers to 
+presence of migrated gallstones within bile ducts. .</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list>
+						<ul>
+						<li> Sudden and rapidly intensifying pain in the upper 
+right portion of your abdomen. 
+ </li>
+						<li> Sudden and rapidly intensifying pain in the center of 
+your abdomen, just below your breastbone. </li>
+						<li>  Back pain between your shoulder blades. </li>
+						<li>  Pain in your right shoulder </li>
+						<li> Nausea or vomiting.   </li>
+						</ul>
+						</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+ <list>
+				<ul>
+				<li>  Regular exercise and low calorie diet help to keep 
+stones away.  </li>
+				<li>   Avoid skipping meals as this increases the chances of 
+stone formation. </li>
+				<li>  people who are intending to lose weight should not 
+do it   </li>
+				<li> very rapidly, aim to lose 500 mg to 1 kg weight/week. </li>
+				
+				</ul>
+				</list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Abhijeet Singh</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

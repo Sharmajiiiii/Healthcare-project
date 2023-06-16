@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Peptic Ulcer Disease and Gastritis</h2>
+  <p>Most ulcers are caused by bacteria called Helicobacter pylori (H. pylori), which are believed to be 
+transmitted from person to person through close contact and exposure to fecal matter or vomit. The 
+bacteria cause an infection that weakens the protective mucus in the stomach and duodenum, 
+allowing acid to get through to the sensitive lining beneath. Both the acid and bacteria irritate the 
+lining and cause an ulcer to form. </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+ <list>
+						<ul>
+						<li> Bloating   </li>
+						<li>  Burping  </li>
+						<li> Dark stool (with gastritis or an ulcer)</li>
+						<li>  Nausea   </li>
+						<li>  * Poor appetite* Vomiting </li>
+						<li>  Weight loss  </li>
+						
+						</ul>
+						</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>   Avoid foods that irritate your stomach.   </li>
+				<li>  Stop smoking. Heavy smokers are more likely to develop duodenal ulcers than nonsmokers.  </li>
+				<li>   Practice moderation. Heavy consumption of alcohol and has been shown to contribute to 
+the development of ulcers, so keep your intake to a minimum. 
+</li>
+				<li>  Take nonsteroidal anti-inflammatory drugs (NSAIDS including aspirin and ibuprofen) with 
+food, as this may decrease your risk of irritating the lining of your stomach .</li>
+							
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Rishi Mohan</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

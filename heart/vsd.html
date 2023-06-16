@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">VENTRICULAR SEPTAL DEFECT (VSD)</h2>
+  <p>A heart defect due to abnormal connection between the 
+lower chambers of the heart (ventricles) 
+It involves a hole in the wall between the heart’s lower 
+chambers. </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>  Tires easily when eating or playing 
+ </li>
+						<li>  Is not gaining weight</li>
+						<li>  Becomes breathless when eating or crying </li>
+						<li>  Breathes rapidly or is short of breath 
+  </li>
+						<li>  Poor eating ,failure to thrive 
+  </li>
+						
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>   Eat a balanced diet</li>
+				<li>   Exercise regularly</li>
+				<li>   Avoid risks   </li>
+				<li>   Avoid infections  </li>
+				<li>   Keep diabetes under control 
+  </li>
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Ajay kaul(MBBS, MS-general surgery) </li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

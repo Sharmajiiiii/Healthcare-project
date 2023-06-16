@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Inflammatory bowel disease (IBD)</h2>
+  <p>Inflammatory bowel disease (IBD) is an umbrella term used to describe 
+disorders that involve chronic inflammation of your digestive tract. 
+Types of IBD include: 
+Ulcerative colitis. This condition involves inflammation and sores (ulcers) 
+along the superficial lining of your large intestine (colon) and rectum. 
+Crohn's disease. This type of IBD is characterized by inflammation of the 
+lining of your digestive tract, which often can involve the deeper layers 
+of the digestive tract. 
+Both ulcerative colitis and Crohn's disease usually are characterized by 
+diarrhea, rectal bleeding, abdominal pain, fatigue and weight loss.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>  Diarrhea   </li>
+						<li> Fatigue</li>
+						<li> Abdominal pain and cramping </li>
+						<li> Blood in your stool </li>
+						<li> Reduced appetite   </li>
+						<li> Unintended weight loss   </li>
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>  Follow a low residue diet to relieve abdominal pain and diarrhea.  </li>
+				<li>  If you have strictures, it is especially important to avoid nuts, 
+seeds, beans and kernels.</li>
+				<li>   Avoid foods that may increase stool output such as fresh fruits 
+and vegetables, prunes and caffeinated beverages  </li>
+	
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Aniket Gupta</li>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

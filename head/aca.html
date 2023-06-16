@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Acute Cerebellar Ataxia(ACA</h2>
+  <p>ACA is a disorder that occurs when the 
+cerebellum becomes inflamed or damaged. 
+The cerebellar is the area of the brain 
+responsible for controlling gait and muscle 
+coordination.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li> Impaired coordination in legs and arms </li>
+						<li>Headaches and vocal change  </li>
+						<li> Slurred speech </li>
+						<li> Uncontrolled or repetitive eye movement  </li>
+						<li> Dizziness and frequent stumbling  </li>
+						
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>  Avoiding excessive alcohol consumption  </li>
+				<li>  Maintaining a healthy diet </li>
+				<li>  Keeping cholesterol in control  </li>
+				<li>  Keeping blood pressure in control </li>
+				<li>  Reducing your risk of stroke by exercising</li>
+				
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Ram kumar Arya</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

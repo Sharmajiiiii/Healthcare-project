@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">CARDIOMYOPATHY</h2>
+  <p>An acquired or hereditary disease of heart muscle, this 
+condition makes it hard for the heart to deliver blood to the 
+body, and can lead to heart failure.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li> Breathlessness with exertion or even at rest </li>
+						<li>  Cough while lying down 
+</li>
+						<li>  Fatigue </li>
+						<li> Chest discomfort or pressure </li>
+						<li>  Bloating of the abdomen due to fluid buildup 
+  </li>
+						
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+<ul>
+				<li>  Avoiding the use of alcohol or cocaine  </li>
+				<li>  Controlling high blood pressure, high cholesterol and 
+diabetes</li>
+				<li>  Eating a healthy diet  </li>
+				<li>   Getting regular exercise</li>
+				<li>Reducing your stress</li>
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Ravindra K Tongia (MBBS, MD-Medicine & Therapeutics)</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

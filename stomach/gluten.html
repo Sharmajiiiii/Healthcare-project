@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Gluten Intolerance Defination</h2>
+  <p>Gluten is a protein found primarily in wheat, barley and rye. If a person has a gluten intolerance, this 
+protein can cause digestive problems such as gassiness, abdominal pain or diarrhea. 
+Gluten intolerance is sometimes confused with Celiac disease, or thought of as a food allergy. While 
+avoiding particular foods is a treatment strategy for all three, these are not the same conditions. 
+ </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+ <list>
+						<ul>
+						<li>  nausea and vomiting </li>
+						<li>  diarrhea </li>
+						<li> rritation of your mouth and throat </li>
+						<li>  hives and rash  </li>
+						<li>nasal congestion   </li>
+						<li>eye irritation   </li>
+						<li>difficulty breathing  </li>
+						</ul>
+						</list>
+						<p> Symptoms related to a wheat allergy will usually begin within minutes of consuming the 
+wheat. However, they can begin up to two hours after. </p>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+ <list>
+				<ul>
+				<li>  Clean all surfaces and utensils carefully before starting work (pots, pans, 
+baking tins, cutlery, cooking spoons, dishes etc.). 
+ </li>
+				<li>  Wooden utensils are difficult to clean. It is advisable to use easy-to-clean 
+utensils made of glass or metal, or to use separate utensils exclusively 
+for gluten-free food. </li>
+				<li>  Always store gluten-free products and foods containing gluten 
+separately (separate jars, bread baskets etc.).   </li>
+				
+				
+				</ul>
+				</list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+			<li> Dr. Rohit Dayal</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

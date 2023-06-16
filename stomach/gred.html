@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Gastroesophageal Reflux Disease(GRED)</h2>
+  <p>Gastroesophageal reflux disease (GERD) occurs when stomach acid frequently 
+flows back into the tube connecting your mouth and stomach. This backwash 
+(acid reflux) can irritate the lining of your stomach 
+Many people experience acid reflux from time to time. GERD is mild acid reflux 
+that occurs at least twice a week, or moderate to severe acid reflux that occurs 
+at least once a week </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>  A burning sensation in your chest (heartburn), usually after eating, which might be worse at night   </li>
+						<li>  Chest pain  </li>
+						<li>  Difficulty swallowing</li>
+						<li> Regurgitation of food or sour liquid   </li>
+						<li>  Sensation of a lump in your throat  </li>
+						
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>    Avoid lying down for three hours after a meal.   </li>
+				<li>   Eat smaller meals more frequently throughout the day. </li>
+				<li>   Wear loose-fitting clothing to avoid pressure on your abdomen.</li>
+				<li>  Lose excess weight.</li>
+				<li>  Quit smoking.</li>
+				<li> Raise the head of your bed six to eight inches by placing wooden blocks under your bedposts.</li>
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+								<li> Dr. Shyaam Agarwal</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

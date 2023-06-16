@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">HEART VALVES DISEASE</h2>
+  <p>In heart valves disease, one or more of the valves in your 
+heart doesn’t work properly. 
+Your heart has four valves that keep blood flowing in the 
+correct direction. In some cases, one or more of the valves 
+don’t open or close properly. </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>  FAINTING </li>
+						<li>  DIZZINESS</li>
+						<li>SWELLING OF YOUR ANKLES AND FEET </li>
+						<li>  FATIGUE  </li>
+						<li> CHEST PAIN   </li>
+						
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>  Eat a healthy diet  </li>
+				<li>  Quit smoking </li>
+				<li> Keep your teeth and gums healthy   </li>
+				<li>   Keep blood pressure in check  </li>
+				<li> Get your heart murmur checked </li>
+				
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. NARESH TREHAN (MBBS, DIPLOMA IN CARDIOLOGY)</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

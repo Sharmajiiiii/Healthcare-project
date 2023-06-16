@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">Constipation</h2>
+  <p>Constipation occurs when a person has difficulty emptying the 
+large bowel. Home remedies and lifestyle changes can often help 
+resolve it, but sometimes, it may need medical attention. 
+Constipation can happen for many reasons, such as when stool 
+passes through the colon too slowly. The slower the food moves 
+through the digestive tract, the more water the colon will absorb 
+and the harder the feces will become. </p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>difficulty passing stool straining when passing stool </li>
+						<li>pain and cramping in the abdomen </li>
+						<li>feeling bloated </li>
+						<li>nausea </li>
+						<li>a loss of appetite </li>
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list">
+				<ul>
+				<li>Eat  a well-balanced diet with plenty of fiber. </li>
+				<li>Drink eight 8-once glassesof a water. </li>
+				<li>Exercise regularly. </li>
+ 				<li>Treat mild constipation with a dietry supplement like magnesium. </li>
+				<li>Move your bowels when you feel the urge. </li>
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+				<li> Dr. Subham Solanki</li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

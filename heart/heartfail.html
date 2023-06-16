@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>disease</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body Style="background-image: url('dashboard.jpg');">
+
+<div class="w3-container" style="text-align:center">
+  <h2 style="text-align:center">HEART FAILURE </h2>
+  <p>A chronic condition in which the heart doesn’t pump blood as 
+well as it should. 
+Heart failure can occur if the heart cannot pump (systolic)or 
+fill (diastolic) adequately.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Symptoms of Diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Precautions of diseases.</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Name of perfectionist of diseases in india.</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2 style="text-align:center">Symptoms of Diseases.</h2>
+  <list >
+						<ul>
+						<li>  Shortness of breath  </li>
+						<li>  Weakness </li>
+						<li> welling in legs, ankles and feet  </li>
+						<li> Reduce ability to exercise   </li>
+						<li>Lack of appetite and nausea   </li>
+						</ul>
+	</list>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none" >
+  <h2 style="text-align:center">Precautions of diseases</h2>
+  <list>
+				<ul>
+				<li>   Stick to a healthy weight </li>
+				<li>   Exercise regularly </li>
+				<li>   Eat fruits and vegetables, whole grains, and lean protein  </li>
+				<li>   Get enough sleep </li>
+				<li>  Limit bad fats, added sugar, salt and alcohol  </li>
+				</ul>
+   </list>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2 style="text-align:center">Name of perfectionist of diseases in india.</h2>
+  <list>
+				<ul>
+			<li>Dr. Balbir singh(MBBS,MD-medicine,DM-cardiology) </li>
+				</ul>
+				</list>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
